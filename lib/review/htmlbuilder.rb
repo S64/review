@@ -1118,7 +1118,7 @@ module ReVIEW
 
     def inline_icon(id)
       begin
-        %Q[<img src="#{@chapter.image(id).path.sub(/\A\.\//, "")}" alt="[#{id}]" />]
+        %Q[<img src="#{@chapter.image(id).path.sub(/\A\.\//, "")}" alt="[#{id}]" class="icon" />]
       rescue
         %Q[<pre>missing image: #{id}</pre>]
       end
